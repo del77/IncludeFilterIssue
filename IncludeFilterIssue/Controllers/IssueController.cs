@@ -11,14 +11,14 @@ namespace IncludeFilterIssue.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class IssueController : ControllerBase
     {
 
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<IssueController> _logger;
         private readonly Context _context;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, Context context)
+        public IssueController(ILogger<IssueController> logger, Context context)
         {
             _logger = logger;
             _context = context;
